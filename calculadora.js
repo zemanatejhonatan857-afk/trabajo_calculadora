@@ -4,15 +4,15 @@ function appendValue(value) {
     display.value += value;
 }
 
-function clearDisplay() {
+function cleardisplay() {
     display.value = "";
 }
 
-function deleteLast() {
-    display.value = display.value.slice(0, -1);
+function eliminar() {
+    display.value = display.value.slice(0,-1);
 }
 
-function calculate() {
+function calcular() {
     try {
         display.value = eval(display.value);
     } catch {
