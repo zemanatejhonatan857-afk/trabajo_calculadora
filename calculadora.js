@@ -5,7 +5,7 @@ function appendValue(value) {
 }
 
 function clearpantalla() {
-    display.value = "";
+    pantalla.value = "";
 }
 
 function eliminar() {
