@@ -1,21 +1,21 @@
-let display = document.getElementById("display");
+let pantalla = document.getElementById("pantalla");
 
 function appendValue(value) {
-    display.value += value;
+    pantalla.value += value;
 }
 
-function cleardisplay() {
+function clearpantalla() {
     display.value = "";
 }
 
 function eliminar() {
-    display.value = display.value.slice(0,-1);
+    pantalla.value = pantalla.value.slice(0,-1);
 }
 
 function calcular() {
     try {
-        display.value = eval(display.value);
+        pantalla.value = eval(pantalla.value);
     } catch {
-        display.value = "Error";
+        pantalla.value = "Error";
     }
 }
