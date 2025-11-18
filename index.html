@@ -4,29 +4,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
-        <input type="tex" id="pantalla">
-        
-        <div>
-        <button onclick="enviar(7)">7</button>
-        <button onclick="enviar(7)">8</button>
-        <button onclick="enviar(7)">9</button>
+        <div class="calculadora">
+
+            <input type="tex." class="pantalla" id="pantalla" disabled>
+
+            <div class="botones">
+                <button onclick="clearpantalla()">c</button>
+                <button onclick="eliminar()">⌫</button>
+                <button onclick="enviarvalue(%)">%</button>
+                <button onclick="enviarvalue(/)">÷</button>
+
+                <button onclick="enviarvalue('7')">7</button>
+                <button onclick="enviarvalue('8')">8</button>
+                <button onclick="enviarvalue('9')">9</button>
+                <button onclick="enviarvalue('*')">×</button>
+                
+
+                <button onclick="enviarvalue('4')">4</button>
+                <button onclick="enviarvalue('5')">5</button>
+                <button onclick="enviarvalue('6')">6</button>
+                <button onclick="enviarvalue('+')">+</button>
+            
+
+                <button onclick="enviarvalue('1')">1</button>
+                <button onclick="enviarvalue('2')">2</button>
+                <button onclick="enviarvalue('3')">3</button>
+                <button onclick="enviarvalue('-')">−</button>
+
+                <button onclick="enviarvalue('0')" class="cero">0</button>
+                <button onclick="enviarvalue('.')">.</button>
+                <button onclick="resultado()">=</button>
+            </div>
         </div>
 
-        <div>
-        <button onclick="enviar(7)">4</button>
-        <button onclick="enviar(7)">5</button>
-        <button onclick="enviar(7)">6</button>
-        </div>
-
-        <div>
-        <button onclick="enviar(7)">1</button>
-        <button onclick="enviar(7)">2</button>
-        <button onclick="enviar(7)">3</button>
-        </div>
-
-    <script src="cal.js"></script>
+       <script src="cal.js"></script>
     </body>
 </html>
