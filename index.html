@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora</title>
-        <link rel="stylesheet" href="estilo.css">
-    </head>
-    <body>
-        <div class="calculadora">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="calculadora.cs">
+</head>
+<body>
 
-            <input type="tex" class="pantalla" id="pantalla" disabled>
+  <div class="contenedor">
+    <input type="text" id="pantalla" readonly>
 
-            <div class="botones">
-                <button onclick="clearpantalla()">c</button>
-                <button onclick="eliminar()">⌫</button>
-                <button onclick="enviar('%')">%</button>
-                <button onclick="enviar('/')">÷</button>
-
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                <button onclick="enviar('*')">×</button>
-                
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button onclick="enviar('+')">+</button>
-            
-
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button onclick="enviar('-')">−</button>
-
-                <button id="0" class="cero">0</button>
-                <button onclick="enviar('.')">.</button>
-                <button onclick="resultado()">=</button>
-            </div>
+    <div class="botones">
+      <button onclick="enviar('7')">7</button>
+      <button onclick="enviar('8')">8</button>
+      <button onclick="enviar('9')">9</button>
+      <button onclick="enviar('/')">÷</button>
+      <div>
+      <button onclick="enviar('4')">4</button>
+      <button onclick="enviar('5')">5</button>
+      <button onclick="enviar('6')">6</button>
+      <button onclick="enviar('*')">×</button>
         </div>
+      <button onclick="enviar('1')">1</button>
+      <button onclick="enviar('2')">2</button>
+      <button onclick="enviar('3')">3</button>
+      <button onclick="enviar('-')">-</button>
+        <div>
+      <button onclick="enviar('0')">0</button>
+      <button onclick="enviar('.')">.</button>
+      <button onclick="borrar()">C</button>
+      <button onclick="enviar('+')">+</button>
+    </div>
 
-       <script src="cal.js"></script>
-    </body>
+    <button class="igual" onclick="calcular()">=</button>
+  </div>
+
+  <script src="calculadora.js"></script>
+</body>
 </html>
